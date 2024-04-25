@@ -1,0 +1,16 @@
+{
+  "name": "nginx",
+  "docker": {
+    "image": "nginx:latest"
+  },
+  "resources": {
+    "cpu": 0.1,
+    "memory": 128
+  },
+  "ports": [
+    {
+      "containerPort": 80,
+      "hostPort": 80
+    }
+  ]
+}
