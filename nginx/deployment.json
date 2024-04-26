@@ -1,7 +1,8 @@
 {
   "name": "nginx",
   "container": {
-    "image": "nginx:latest",
+    "image": "nginx",
+    "tag": "latest",
     "command": "",
     "arguments": []
   },
@@ -11,8 +12,8 @@
   },
   "ports": [
     {
-      "containerPort": 80,
-      "ExternalPort": 80
+      "container": 80,
+      "external": 80
     }
   ],
   "env": [

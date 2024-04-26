@@ -8,7 +8,8 @@ Deployments must be of type:
 {
   "name": "name",
   "container": {
-    "image": "image:tag",
+    "image": "image",
+    "tag": "tag",
     "command": "bash script.sh",
     "arguments": ["arg1", "arg2"]
   },
@@ -22,8 +23,8 @@ Deployments must be of type:
   },
   "ports": [
     {
-      "containerPort": 80,
-      "ExternalPort": 80
+      "container": 80,
+      "external": 80
     }
   ],
   "env": [
