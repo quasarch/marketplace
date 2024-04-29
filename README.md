@@ -16,6 +16,7 @@ Deployments must be of type:
   "resources": {
     "cpu": 1,
     "memory": 512,
+    "ephemeralStorage": 10,
     "gpu": {
       "cores": 1,
       "type": "Nvidia h100"

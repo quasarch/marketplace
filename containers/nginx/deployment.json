@@ -9,7 +9,8 @@
   },
   "resources": {
     "cpu": 1,
-    "memory": 512
+    "memory": 512,
+    "ephemeralStorage": 0
   },
   "ports": [
     {
