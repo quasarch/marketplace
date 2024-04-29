@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "nginx",
   "container": {
-    "image": "nginx",
+    "image": "nginxdemos/hello",
     "tag": "latest",
     "command": "",
     "arguments": []
