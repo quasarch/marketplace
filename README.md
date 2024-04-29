@@ -40,10 +40,11 @@ Deployments must be of type:
 
 We are always looking for more contributions to our marketplace. If you have a container, lambda, or VM that you think would be helpful to other developers, please submit a pull request following the format above.
 
-We support Metadata for each deployment. This is a JSON object that can be added to the deployment to provide more information about the deployment. This is optional, but we encourage you to add metadata to your deployments.
+We support Metadata for each deployment. This is an additional JSON parameter that can be added to the deployment to provide more information about the deployment. This is optional, but we encourage you to add metadata to your deployments.
 
 ```json
 {
+  ...<other deployment parameters>
   "metadata": {
     "version": "1.0.0"
     "tags": ["tag", "tag2"],

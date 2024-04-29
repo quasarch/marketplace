@@ -1,5 +1,4 @@
 {
-  "version": "1.0.0",
   "name": "mongo",
   "container": {
     "image": "mongo",
@@ -26,5 +25,11 @@
       "name": "MONGO_INITDB_ROOT_PASSWORD",
       "value": "example"
     }
-  ]
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["database", "mongo"],
+    "logo": "https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png",
+    "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era."
+  }
 }
