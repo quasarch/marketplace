@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["web-server", "nginx"],
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDowJQ5hgNDHoJAv7pCNcBqqE_eZLFn25XmbA93OEQw&s",
+    "description": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache."
+  }
+}

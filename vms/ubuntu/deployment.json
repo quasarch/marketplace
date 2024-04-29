@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "name": "ubuntu",
+  "container": {
+    "image": "ubuntu",
+    "tag": "latest",
+    "command": "",
+    "arguments": []
+  },
+  "resources": {
+    "cpu": 3,
+    "memory": 2048
+  },
+  "ports": [
+    {
+      "container": 443,
+      "external": 443
+    }
+  ],
+  "env": []
+}

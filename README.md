@@ -1,6 +1,6 @@
-# container-marketplace
+# marketplace
 
-Container Marketplace is a Quasarch curated list of public made containers people can use to deploy through [Quasarch Console](#). Please submit a pull request if you want to add any more containers that might be helpful to other developers.
+Marketplace is a Quasarch curated list of public made containers, lambdas, and VMs people can use to deploy through [Quasarch Console](#). Please submit a pull request if you want to add any more containers that might be helpful to other developers.
 
 Deployments must be of type:
 
@@ -33,6 +33,23 @@ Deployments must be of type:
       "value": "value"
     }
   ]
+}
+```
+
+## Contributing
+
+We are always looking for more contributions to our marketplace. If you have a container, lambda, or VM that you think would be helpful to other developers, please submit a pull request following the format above.
+
+We support Metadata for each deployment. This is a JSON object that can be added to the deployment to provide more information about the deployment. This is optional, but we encourage you to add metadata to your deployments.
+
+```json
+{
+  "metadata": {
+    "version": "1.0.0"
+    "tags": ["tag", "tag2"],
+    "logo": "https://link-to-logo.com",
+    "description": "Description of the deployment.",
+  }
 }
 ```
 
