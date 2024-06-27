@@ -8,8 +8,8 @@
   },
   "resources": {
     "cpu": 1,
-    "memory": 512,
-    "ephemeralStorage": 10
+    "memory": "512Mi",
+    "ephemeralStorage": "10Gi"
   },
   "ports": [
     {

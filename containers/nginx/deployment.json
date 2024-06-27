@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "nginx",
+  "name": "hello-world",
   "container": {
     "image": "nginxdemos/hello",
     "tag": "latest",
@@ -8,9 +8,9 @@
     "arguments": []
   },
   "resources": {
-    "cpu": 1,
-    "memory": 512,
-    "ephemeralStorage": 1
+    "cpu": 2,
+    "memory": "512Mi",
+    "ephemeralStorage": "5Gi"
   },
   "ports": [
     {
