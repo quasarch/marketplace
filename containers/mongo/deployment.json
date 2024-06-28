@@ -14,7 +14,8 @@
   "ports": [
     {
       "container": 27017,
-      "external": 27017
+      "external": 27017,
+      "protocol": "tcp"
     }
   ],
   "env": [

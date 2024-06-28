@@ -15,7 +15,8 @@
   "ports": [
     {
       "container": 3000,
-      "external": 80
+      "external": 80,
+      "protocol": "tcp"
     }
   ],
   "env": [],

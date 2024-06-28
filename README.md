@@ -15,8 +15,8 @@ Deployments must be of type:
   },
   "resources": {
     "cpu": 1,
-    "memory": 512,
-    "ephemeralStorage": 10,
+    "memory": "512Mi",
+    "ephemeralStorage": "10Gi",
     "gpu": {
       "cores": 1,
       "type": "Nvidia h100"
@@ -25,7 +25,8 @@ Deployments must be of type:
   "ports": [
     {
       "container": 80,
-      "external": 80
+      "external": 80,
+      "protocol": "udp"
     }
   ],
   "env": [
