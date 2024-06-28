@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "grafana",
+  "container": {
+    "image": "grafana/grafana",
+    "tag": "latest",
+    "command": "",
+    "arguments": []
+  },
+  "resources": {
+    "cpu": 1,
+    "memory": "4Gi",
+    "ephemeralStorage": "10Gi"
+  },
+  "ports": [
+    {
+      "container": 3000,
+      "external": 80,
+      "protocol": "tcp"
+    }
+  ],
+  "env": [],
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["web-server", "monitoring"],
+    "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/grafana_logo_icon_171048.png",
+    "description": "Grafana is an open-source platform for monitoring and observability, enabling users to visualize and analyze data from various sources through customizable dashboards."
+  }
+}
