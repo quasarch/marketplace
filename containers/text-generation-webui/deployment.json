@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "name": "text-generation-webui",
+  "container": {
+    "image": "zjuuu/text-generation-webui",
+    "tag": "v1.7.3",
+    "command": "",
+    "arguments": []
+  },
+  "resources": {
+    "cpu": 6,
+    "memory": "16Gi",
+    "ephemeralStorage": "30Gi",
+    "gpu": {
+      "cores": 1,
+      "type": "Nvidia h100"
+    }
+  },
+  "ports": [
+    {
+      "container": 7860,
+      "external": 80,
+      "protocol": "tcp"
+    },
+    {
+      "container": 5000,
+      "external": 5000,
+      "protocol": "tcp"
+    },
+    {
+      "container": 5005,
+      "external": 5005,
+      "protocol": "tcp"
+    }
+  ],
+  "env": [
+    {
+      "name": "CLI_ARGS",
+      "value": "--listen --auto-devices --api"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["AI", "LLM"],
+    "logo": "",
+    "description": ""
+  }
+}

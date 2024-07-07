@@ -2,15 +2,15 @@
   "version": "1.0.0",
   "name": "softether",
   "container": {
-    "image": "grafana/grafana",
-    "tag": "latest",
+    "image": "andrey01/softether",
+    "tag": "4.38-9760-2",
     "command": "",
     "arguments": []
   },
   "resources": {
     "cpu": 1,
-    "memory": "4Gi",
-    "ephemeralStorage": "10Gi"
+    "memory": "1Gi",
+    "ephemeralStorage": "1Gi"
   },
   "ports": [
     {
@@ -53,7 +53,7 @@
   "metadata": {
     "version": "1.0.0",
     "tags": ["VPN"],
-    "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/grafana_logo_icon_171048.png",
+    "logo": "https://fineproxy.org/wp-content/uploads/2023/09/SoftEther-logo.png",
     "description": "SoftEther VPN is an open-source, cross-platform VPN software that provides a secure, flexible, and high-performance solution for creating and managing virtual private networks."
   }
 }
