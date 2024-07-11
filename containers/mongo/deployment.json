@@ -1,37 +1,36 @@
 {
-  "name": "mongo",
-  "container": {
-    "image": "mongo",
-    "tag": "latest",
-    "command": "",
-    "arguments": []
-  },
-  "resources": {
-    "cpu": 1,
-    "memory": "512Mi",
-    "ephemeralStorage": "10Gi"
-  },
-  "ports": [
-    {
-      "container": 27017,
-      "external": 27017,
-      "protocol": "tcp"
-    }
-  ],
-  "env": [
-    {
-      "name": "MONGO_INITDB_ROOT_USERNAME",
-      "value": "root"
+    "name": "mongo",
+    "container": {
+        "image": "mongo",
+        "tag": "latest",
+        "command": "",
+        "arguments": []
     },
-    {
-      "name": "MONGO_INITDB_ROOT_PASSWORD",
-      "value": "example"
+    "resources": {
+        "cpu": 1,
+        "memory": "512Mi",
+        "ephemeralStorage": "10Gi"
+    },
+    "ports": [
+        {
+            "container": 27017,
+            "external": 27017,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "MONGO_INITDB_ROOT_USERNAME",
+            "value": "root"
+        },
+        {
+            "name": "MONGO_INITDB_ROOT_PASSWORD",
+            "value": "example"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["database", "mongo"],
+        "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era."
     }
-  ],
-  "metadata": {
-    "version": "1.0.0",
-    "tags": ["database", "mongo"],
-    "logo": "https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png",
-    "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era."
-  }
 }

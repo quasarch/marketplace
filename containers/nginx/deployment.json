@@ -1,34 +1,33 @@
 {
-  "version": "1.0.0",
-  "name": "hello-world",
-  "container": {
-    "image": "nginxdemos/hello",
-    "tag": "latest",
-    "command": "",
-    "arguments": []
-  },
-  "resources": {
-    "cpu": 2,
-    "memory": "512Mi",
-    "ephemeralStorage": "5Gi"
-  },
-  "ports": [
-    {
-      "container": 80,
-      "external": 80,
-      "protocol": "tcp"
-    }
-  ],
-  "env": [
-    {
-      "name": "NGINX_PORT",
-      "value": "80"
-    }
-  ],
-  "metadata": {
     "version": "1.0.0",
-    "tags": ["web-server", "nginx"],
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDowJQ5hgNDHoJAv7pCNcBqqE_eZLFn25XmbA93OEQw&s",
-    "description": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache."
-  }
+    "name": "hello-world",
+    "container": {
+        "image": "nginxdemos/hello",
+        "tag": "latest",
+        "command": "",
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 2,
+        "memory": "512Mi",
+        "ephemeralStorage": "5Gi"
+    },
+    "ports": [
+        {
+            "container": 80,
+            "external": 80,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "NGINX_PORT",
+            "value": "80"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["web-server", "nginx"],
+        "description": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache."
+    }
 }

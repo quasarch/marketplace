@@ -1,28 +1,28 @@
 {
-  "version": "1.0.0",
-  "name": "ubuntu",
-  "container": {
-    "image": "ubuntu",
-    "tag": "latest",
-    "command": "",
-    "arguments": []
-  },
-  "resources": {
-    "cpu": 3,
-    "memory": 2048,
-    "ephemeralStorage": 8
-  },
-  "ports": [
-    {
-      "container": 443,
-      "external": 443
-    }
-  ],
-  "env": [],
-  "metadata": {
     "version": "1.0.0",
-    "tags": ["ubuntu", "linux", "os"],
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/2048px-Logo-ubuntu_cof-orange-hex.svg.png",
-    "description": "Ubuntu is a free and open-source Linux distribution based on Debian. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All the editions can run on the computer alone, or in a virtual machine."
-  }
+    "name": "ubuntu",
+    "container": {
+        "image": "ubuntu",
+        "tag": "latest",
+        "command": "",
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 3,
+        "memory": 2048,
+        "ephemeralStorage": 8
+    },
+    "ports": [
+        {
+            "container": 443,
+            "external": 443
+        }
+    ],
+    "env": [],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["ubuntu", "linux", "os"],
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/2048px-Logo-ubuntu_cof-orange-hex.svg.png",
+        "description": "Ubuntu is a free and open-source Linux distribution based on Debian. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All the editions can run on the computer alone, or in a virtual machine."
+    }
 }

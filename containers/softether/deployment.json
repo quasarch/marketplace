@@ -1,59 +1,58 @@
 {
-  "version": "1.0.0",
-  "name": "softether",
-  "container": {
-    "image": "andrey01/softether",
-    "tag": "4.38-9760-2",
-    "command": "",
-    "arguments": []
-  },
-  "resources": {
-    "cpu": 1,
-    "memory": "1Gi",
-    "ephemeralStorage": "1Gi"
-  },
-  "ports": [
-    {
-      "container": 80,
-      "external": 80,
-      "protocol": "tcp"
-    },
-    {
-      "container": 443,
-      "external": 443,
-      "protocol": "tcp"
-    },
-    {
-      "container": 992,
-      "external": 992,
-      "protocol": "tcp"
-    },
-    {
-      "container": 5555,
-      "external": 5555,
-      "protocol": "tcp"
-    },
-    {
-      "container": 1194,
-      "external": 1194,
-      "protocol": "udp"
-    },
-    {
-      "container": 500,
-      "external": 500,
-      "protocol": "udp"
-    },
-    {
-      "container": 4500,
-      "external": 4500,
-      "protocol": "udp"
-    }
-  ],
-  "env": [],
-  "metadata": {
     "version": "1.0.0",
-    "tags": ["VPN"],
-    "logo": "https://fineproxy.org/wp-content/uploads/2023/09/SoftEther-logo.png",
-    "description": "SoftEther VPN is an open-source, cross-platform VPN software that provides a secure, flexible, and high-performance solution for creating and managing virtual private networks."
-  }
+    "name": "softether",
+    "container": {
+        "image": "andrey01/softether",
+        "tag": "4.38-9760-2",
+        "command": "",
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 1,
+        "memory": "1Gi",
+        "ephemeralStorage": "1Gi"
+    },
+    "ports": [
+        {
+            "container": 80,
+            "external": 80,
+            "protocol": "tcp"
+        },
+        {
+            "container": 443,
+            "external": 443,
+            "protocol": "tcp"
+        },
+        {
+            "container": 992,
+            "external": 992,
+            "protocol": "tcp"
+        },
+        {
+            "container": 5555,
+            "external": 5555,
+            "protocol": "tcp"
+        },
+        {
+            "container": 1194,
+            "external": 1194,
+            "protocol": "udp"
+        },
+        {
+            "container": 500,
+            "external": 500,
+            "protocol": "udp"
+        },
+        {
+            "container": 4500,
+            "external": 4500,
+            "protocol": "udp"
+        }
+    ],
+    "env": [],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["VPN"],
+        "description": "SoftEther VPN is an open-source, cross-platform VPN software that provides a secure, flexible, and high-performance solution for creating and managing virtual private networks."
+    }
 }

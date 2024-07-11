@@ -50,10 +50,11 @@ We support Metadata for each deployment. This is an additional JSON parameter th
   "metadata": {
     "version": "1.0.0"
     "tags": ["tag", "tag2"],
-    "logo": "https://link-to-logo.com",
     "description": "Description of the deployment.",
   }
 }
 ```
+
+Add a logo with the filename `logo.png` to the root of the deployment folder. This will be displayed in the Quasarch Console.
 
 Join our [Discord](https://discord.gg/gc9X3VhXJ8) to stay in the loop with updates and announcements of Quasarch. Our team is always eager to hear from you.
