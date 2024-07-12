@@ -13,7 +13,7 @@
         "ephemeralStorage": "30Gi",
         "gpu": {
             "cores": 1,
-            "type": "Nvidia h100"
+            "types": ["Nvidia h100"]
         }
     },
     "ports": [

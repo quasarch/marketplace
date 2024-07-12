@@ -19,7 +19,7 @@ Deployments must be of type:
     "ephemeralStorage": "10Gi",
     "gpu": {
       "cores": 1,
-      "type": "Nvidia h100"
+      "types": ["Nvidia h100", "Nvidia a100"]
     }
   },
   "ports": [
