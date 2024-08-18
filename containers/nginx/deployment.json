@@ -4,7 +4,7 @@
     "container": {
         "image": "nginxdemos/hello",
         "tag": "latest",
-        "command": "",
+        "command": [],
         "arguments": []
     },
     "resources": {

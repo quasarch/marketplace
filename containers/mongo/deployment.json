@@ -3,7 +3,7 @@
     "container": {
         "image": "mongo",
         "tag": "latest",
-        "command": "",
+        "command": [],
         "arguments": []
     },
     "resources": {

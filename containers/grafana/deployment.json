@@ -4,7 +4,7 @@
     "container": {
         "image": "grafana/grafana",
         "tag": "latest",
-        "command": "",
+        "command": [],
         "arguments": []
     },
     "resources": {

@@ -4,7 +4,7 @@
     "container": {
         "image": "andrey01/softether",
         "tag": "4.38-9760-2",
-        "command": "",
+        "command": [],
         "arguments": []
     },
     "resources": {
