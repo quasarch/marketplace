@@ -4,7 +4,7 @@
     "container": {
         "image": "zjuuu/text-generation-webui",
         "tag": "v1.7.3",
-        "command": "",
+        "command": [],
         "arguments": []
     },
     "resources": {
