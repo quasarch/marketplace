@@ -9,7 +9,14 @@
     "resources": {
         "cpu": 1,
         "memory": "512Mi",
-        "ephemeralStorage": "10Gi"
+        "ephemeralStorage": "10Gi",
+        "storage": {
+            "name": "mongo-storage",
+            "size": "10Gi",
+            "persistent": true,
+            "class": "standard",
+            "mount": "/data/db"
+        }
     },
     "ports": [
         {
