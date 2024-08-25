@@ -15,7 +15,7 @@
             "cores": 1,
             "gpuRequests": [
                 {
-                    "model": "h100",
+                    "gpuCode": "h100",
                     "memory": "80Gi"
                 }
             ]
