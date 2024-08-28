@@ -10,7 +10,16 @@
     "resources": {
         "cpu": 2,
         "memory": "8Gi",
-        "ephemeralStorage": "10Gi"
+        "ephemeralStorage": "10Gi",
+        "storage": [
+            {
+                "name": "data",
+                "size": "10Gi",
+                "persistent": true,
+                "class": "beta3",
+                "mount": "/data"
+            }
+        ]
     },
     "ports": [
         {
@@ -44,15 +53,6 @@
         {
             "name": "MAX_PLAYERS",
             "value": "10"
-        }
-    ],
-    "storage": [
-        {
-            "name": "data",
-            "size": "10Gi",
-            "persistent": true,
-            "class": "beta3",
-            "mount": "/data"
         }
     ],
     "metadata": {
