@@ -1,0 +1,63 @@
+{
+    "version": "1.0.0",
+    "name": "grafana",
+    "container": {
+        "image": "itzg/minecraft-server",
+        "tag": "latest",
+        "command": [],
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 2,
+        "memory": "8Gi",
+        "ephemeralStorage": "10Gi"
+    },
+    "ports": [
+        {
+            "container": 25565,
+            "external": 25565,
+            "protocol": "tcp"
+        },
+        {
+            "container": 3333,
+            "external": 3333,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "FORCE_REDOWNLOAD",
+            "value": "true"
+        },
+        {
+            "name": "EULA",
+            "value": "true"
+        },
+        {
+            "name": "SERVER_NAME",
+            "value": "Yourservername"
+        },
+        {
+            "name": "MEMORY",
+            "value": "6G"
+        },
+        {
+            "name": "MAX_PLAYERS",
+            "value": "10"
+        }
+    ],
+    "storage": [
+        {
+            "name": "data",
+            "size": "10Gi",
+            "persistent": true,
+            "class": "beta3",
+            "mount": "/data"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["gaming"],
+        "description": "Launch a Minecraft server on the Quasarch Cloud Platform. It can be easily configured with only changes to deploy.yaml, and supports any Minecraft version, including multiple modded server types."
+    }
+}
