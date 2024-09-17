@@ -1,0 +1,45 @@
+{
+    "version": "1.0.0",
+    "name": "code-server",
+    "container": {
+        "image": "ghcr.io/linuxserver/code-server",
+        "tag": "latest",
+        "command": [],
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 2,
+        "memory": "4Gi",
+        "ephemeralStorage": "10Gi"
+    },
+    "ports": [
+        {
+            "container": 5432,
+            "external": 80,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "PUID",
+            "value": "1000"
+        },
+        {
+            "name": "PGID",
+            "value": "1000"
+        },
+        {
+            "name": "PASSWORD",
+            "value": "password"
+        },
+        {
+            "name": "SUDO_PASSWORD",
+            "value": "password"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["lab"],
+        "description": "Launch a code server laboratory."
+    }
+}
