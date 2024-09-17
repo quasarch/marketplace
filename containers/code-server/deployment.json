@@ -14,7 +14,7 @@
     },
     "ports": [
         {
-            "container": 5432,
+            "container": 8443,
             "external": 80,
             "protocol": "tcp"
         }
