@@ -25,7 +25,7 @@
         {
             "container": 5432,
             "external": 5432,
-            "protocol": "udp"
+            "protocol": "tcp"
         }
     ],
     "env": [
