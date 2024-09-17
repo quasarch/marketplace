@@ -16,7 +16,8 @@
                 "name": "data",
                 "size": "10Gi",
                 "persistent": true,
-                "class": "beta3"
+                "class": "beta3",
+                "mount": "/var/lib/postgresql/data"
             }
         ]
     },
