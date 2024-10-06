@@ -23,18 +23,8 @@
     },
     "ports": [
         {
-            "container": 7860,
+            "container": 8080,
             "external": 80,
-            "protocol": "tcp"
-        },
-        {
-            "container": 5000,
-            "external": 5000,
-            "protocol": "tcp"
-        },
-        {
-            "container": 5005,
-            "external": 5005,
             "protocol": "tcp"
         }
     ],
