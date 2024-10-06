@@ -14,7 +14,7 @@
             "name": "mongo-storage",
             "size": "10Gi",
             "persistent": true,
-            "class": "standard",
+            "class": "beta3",
             "mount": "/data/db"
         }
     },
