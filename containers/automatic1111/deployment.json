@@ -8,9 +8,9 @@
         "arguments": []
     },
     "resources": {
-        "cpu": 6,
-        "memory": "16Gi",
-        "ephemeralStorage": "30Gi",
+        "cpu": 16,
+        "memory": "32Gi",
+        "ephemeralStorage": "50Gi",
         "gpu": {
             "cores": 1,
             "gpuRequests": [
