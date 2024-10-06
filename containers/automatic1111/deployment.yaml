@@ -1,0 +1,52 @@
+{
+    "version": "1.0.0",
+    "name": "automatic1111",
+    "container": {
+        "image": "declab/automatic1111",
+        "tag": "0.1",
+        "command": [],
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 6,
+        "memory": "16Gi",
+        "ephemeralStorage": "30Gi",
+        "gpu": {
+            "cores": 1,
+            "gpuRequests": [
+                {
+                    "gpuCode": "h100",
+                    "memory": "80Gi"
+                }
+            ]
+        }
+    },
+    "ports": [
+        {
+            "container": 7860,
+            "external": 80,
+            "protocol": "tcp"
+        },
+        {
+            "container": 5000,
+            "external": 5000,
+            "protocol": "tcp"
+        },
+        {
+            "container": 5005,
+            "external": 5005,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "CLI_ARGS",
+            "value": "--listen --auto-devices --api"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["AI", "LLM"],
+        "description": ""
+    }
+}
