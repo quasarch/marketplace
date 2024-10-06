@@ -30,8 +30,8 @@
     ],
     "env": [
         {
-            "name": "CLI_ARGS",
-            "value": "--listen --auto-devices --api"
+            "name": "COMMANDLINE_ARGS",
+            "value": "--listen --port=8080 --no-half"
         }
     ],
     "metadata": {
