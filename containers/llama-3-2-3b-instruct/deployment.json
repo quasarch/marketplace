@@ -1,0 +1,51 @@
+{
+    "version": "1.0.0",
+    "name": "llama-3-2",
+    "container": {
+        "image": "vllm/vllm-openai",
+        "tag": "v0.6.2@sha256:730ef3d3c17a217b34cfdbfd99be80b3f459e37ef2fc0c5c43ba70752dad08ae",
+        "command": ["bash","-c"],
+        "arguments": ["vllm serve meta-llama/Llama-3.2-3B-Instruct"]
+    },
+    "resources": {
+        "cpu": 4,
+        "memory": "16Gi",
+        "ephemeralStorage": "10Gi",
+        "gpu": {
+            "cores": 1,
+            "gpuRequests": [
+                {
+                    "gpuCode": "h100",
+                    "memory": "80Gi",
+                    "interface": "pcie"
+                }
+            ]
+        },
+        "storage": {
+            "name": "shm",
+            "size": "10Gi",
+            "persistent": false,
+            "class": "ram",
+            "mount": "/dev/shm"
+        }
+
+    },
+    "ports": [
+        {
+            "container": 8000,
+            "external": 80,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "HF_TOKEN",
+            "value": ""
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["AI", "LLM"],
+        "description": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    }
+}
