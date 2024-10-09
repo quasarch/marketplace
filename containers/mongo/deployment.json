@@ -10,13 +10,15 @@
         "cpu": 1,
         "memory": "512Mi",
         "ephemeralStorage": "10Gi",
-        "storage": {
-            "name": "mongo-storage",
-            "size": "10Gi",
-            "persistent": true,
-            "class": "beta3",
-            "mount": "/data/db"
-        }
+        "storage": [
+            {
+                "name": "mongo-storage",
+                "size": "10Gi",
+                "persistent": true,
+                "class": "beta3",
+                "mount": "/data/db"
+            }
+        ]
     },
     "ports": [
         {

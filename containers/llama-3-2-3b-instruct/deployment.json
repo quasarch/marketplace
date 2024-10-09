@@ -21,13 +21,15 @@
                 }
             ]
         },
-        "storage": {
-            "name": "shm",
-            "size": "10Gi",
-            "persistent": false,
-            "class": "ram",
-            "mount": "/dev/shm"
-        }
+        "storage": [
+            {
+                "name": "shm",
+                "size": "10Gi",
+                "persistent": false,
+                "class": "ram",
+                "mount": "/dev/shm"
+            }
+        ]
 
     },
     "ports": [
