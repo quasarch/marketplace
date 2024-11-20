@@ -1,0 +1,70 @@
+{
+    "version": "1.0.0",
+    "name": "comfyui-cuda",
+    "container": {
+        "image": "aidockorg/comfyui-cuda",
+        "tag": "v0.2.7",
+        "command": [],
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 32,
+        "memory": "32Gi",
+        "ephemeralStorage": "100Gi",
+        "gpu": {
+            "cores": 1,
+            "gpuRequests": [
+                {
+                    "gpuCode": "h100",
+                    "memory": "80Gi"
+                }
+            ]
+        },
+        "storage": [
+            {
+                "name": "comfyui",
+                "size": "100Gi",
+                "persistent": true,
+                "class": "v1beta3",
+                "mount": "/opt/"
+            }
+        ]
+    },
+    "ports": [
+        {
+            "container": 8188,
+            "external": 80,
+            "protocol": "tcp"
+        },
+        {
+            "container": 22,
+            "external": 22,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "HF_TOKEN",
+            "value": ""
+        },
+        {
+            "name": "COMFYUI_PORT_HOST",
+            "value": "8188"
+        },
+        {
+            "name": "WEB_ENABLE_AUTH",
+            "value": "false"
+        },
+        {
+
+            "name": "SSH_PUBKEY",
+            "value": ""
+        }
+
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["AI", "Stable Diffusion"],
+        "description": ""
+    }
+}
