@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "llama-3-2",
+    "name": "Llama 3.2 3B",
     "container": {
         "image": "vllm/vllm-openai",
         "tag": "v0.6.2@sha256:730ef3d3c17a217b34cfdbfd99be80b3f459e37ef2fc0c5c43ba70752dad08ae",

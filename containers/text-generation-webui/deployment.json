@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "text-generation-webui",
+    "name": "Text Generation Web UI",
     "container": {
         "image": "zjuuu/text-generation-webui",
         "tag": "v1.7.3",

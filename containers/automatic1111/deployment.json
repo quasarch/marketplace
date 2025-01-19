@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "automatic1111",
+    "name": "Automatic1111",
     "container": {
         "image": "declab/automatic1111",
         "tag": "0.1",

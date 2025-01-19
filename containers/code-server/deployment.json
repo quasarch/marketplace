@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "code-server",
+    "name": "Code Server",
     "container": {
         "image": "ghcr.io/linuxserver/code-server",
         "tag": "latest",

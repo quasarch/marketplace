@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "minecraft",
+    "name": "Minecraft",
     "container": {
         "image": "itzg/minecraft-server",
         "tag": "latest",

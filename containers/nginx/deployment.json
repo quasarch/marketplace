@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "hello-world",
+    "name": "Hello World",
     "container": {
         "image": "nginxdemos/hello",
         "tag": "latest",

@@ -1,5 +1,5 @@
 {
-    "name": "mongo",
+    "name": "Mongo",
     "container": {
         "image": "mongo",
         "tag": "latest",

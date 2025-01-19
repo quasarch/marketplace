@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "comfyui-cuda",
+    "name": "ComfyUI CUDA",
     "container": {
         "image": "aidockorg/comfyui-cuda",
         "tag": "v0.2.7",

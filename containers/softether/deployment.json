@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "softether",
+    "name": "Softether",
     "container": {
         "image": "andrey01/softether",
         "tag": "4.38-9760-2",
