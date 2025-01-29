@@ -8,7 +8,7 @@
         "arguments": []
     },
     "resources": {
-        "cpu": 32,
+        "cpu": 10,
         "memory": "32Gi",
         "ephemeralStorage": "100Gi",
         "gpu": {
