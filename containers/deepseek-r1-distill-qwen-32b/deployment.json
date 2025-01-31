@@ -2,10 +2,10 @@
     "version": "1.0.0",
     "name": "DeepSeek R1 Distill Qwen 32B (vLLM)",
     "container": {
-        "image": "vllm/vllm-openai",
-        "tag": "v0.6.2@sha256:730ef3d3c17a217b34cfdbfd99be80b3f459e37ef2fc0c5c43ba70752dad08ae",
+        "image": "lmsysorg/sglang",
+        "tag": "v0.4.1.post4-cu124-srt",
         "command": ["bash","-c"],
-        "arguments": ["vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"]
+        "arguments": ["python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-R1-Distill-Qwen-32B --tp 1 --trust-remote-code --host 0.0.0.0 --port 8000"]
     },
     "resources": {
         "cpu": 32,
