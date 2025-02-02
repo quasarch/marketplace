@@ -1,0 +1,59 @@
+{
+    "version": "1.0.0",
+    "name": "Passage",
+    "container": {
+        "image": "ghcr.io/akash-network/cosmos-omnibus",
+        "tag": "v1.2.0-passage-v2.4.0",
+        "command": [],
+        "arguments": []
+    },
+    "resources": {
+        "cpu": 4,
+        "memory": "32Gi",
+        "ephemeralStorage": "10Gi",
+        "storage": [
+            {
+                "name": "data",
+                "size": "400Gi",
+                "persistent": true,
+                "class": "beta3",
+                "mount": "/root/.passage"
+            }
+        ]
+    },
+    "ports": [
+        {
+            "container": 26657,
+            "external": 26657,
+            "protocol": "tcp"
+        },
+        {
+            "container": 26656,
+            "external": 26656,
+            "protocol": "tcp"
+        }
+    ],
+    "env": [
+        {
+            "name": "MONIKER",
+            "value": "Passage Node",
+        },
+        {
+            "name": "P2P_POLKACHU",
+            "value": "1"
+        },
+        {
+            "name": "STATESYNC_POLKACHU",
+            "value": "1"
+        },
+        {
+            "name": "ADDRBOOK_POLKACHU",
+            "value": "1"
+        }
+    ],
+    "metadata": {
+        "version": "1.0.0",
+        "tags": ["blockchain"],
+        "description": "Passage blockchain node."
+    }
+}
