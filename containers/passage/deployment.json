@@ -36,7 +36,7 @@
     "env": [
         {
             "name": "MONIKER",
-            "value": "Passage Node",
+            "value": "Passage Node"
         },
         {
             "name": "P2P_POLKACHU",
