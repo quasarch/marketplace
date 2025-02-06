@@ -57,7 +57,7 @@
     ],
     "metadata": {
         "version": "1.0.0",
-        "tags": ["gaming"],
+        "tags": ["Gaming"],
         "description": "Launch a Minecraft server on the Quasarch Cloud Platform. It can be easily configured with only changes to deploy.yaml, and supports any Minecraft version, including multiple modded server types."
     }
 }

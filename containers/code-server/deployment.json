@@ -39,7 +39,7 @@
     ],
     "metadata": {
         "version": "1.0.0",
-        "tags": ["lab"],
+        "tags": ["Lab"],
         "description": "Launch a code server laboratory."
     }
 }

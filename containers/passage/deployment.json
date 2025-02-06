@@ -53,7 +53,7 @@
     ],
     "metadata": {
         "version": "1.0.0",
-        "tags": ["blockchain"],
+        "tags": ["Blockchain"],
         "description": "Passage blockchain node."
     }
 }
